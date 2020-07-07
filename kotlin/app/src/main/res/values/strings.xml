@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CrashKitDemo</string>
+    <string name="text_view_title">Crash Kit demo</string>
+    <string name="btn_make_crash">Make crash</string>
+    <string name="btn_crash_on">Crash Collect ON</string>
+    <string name="btn_crash_off">Crash Collect OFF</string>
+</resources>

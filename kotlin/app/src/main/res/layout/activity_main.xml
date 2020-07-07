@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view_title"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:layout_marginTop="@dimen/margin_top_textview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin">
+
+    <Button
+        android:id="@+id/makeCrashButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_make_crash"
+        android:layout_marginTop="@dimen/margin_top_button"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/crashOnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_crash_on"
+        android:layout_marginTop="@dimen/margin_top_button"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/crashOffButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_crash_off"
+        android:layout_marginTop="@dimen/margin_top_button"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+</LinearLayout>
