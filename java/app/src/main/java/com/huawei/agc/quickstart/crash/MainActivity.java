@@ -18,6 +18,7 @@ package com.huawei.agc.quickstart.crash;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -35,7 +36,7 @@ public class MainActivity extends Activity {
         btn_crash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AGConnectCrash.getInstance().testIt();
+                AGConnectCrash.getInstance().testIt(MainActivity.this);
             }
         });
 
@@ -52,6 +53,25 @@ public class MainActivity extends Activity {
                 AGConnectCrash.getInstance().enableCrashCollection(true);
             }
         });
+
+        findViewById(R.id.CustomReport).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AGConnectCrash.getInstance().setUserId("testuser");
+                AGConnectCrash.getInstance().log(Log.DEBUG,"set debug log.");
+                AGConnectCrash.getInstance().log(Log.INFO,"set info log.");
+                AGConnectCrash.getInstance().log(Log.WARN,"set warning log.");
+                AGConnectCrash.getInstance().log(Log.ERROR,"set error log.");
+                AGConnectCrash.getInstance().setCustomKey("stringKey", "Hello world");
+                AGConnectCrash.getInstance().setCustomKey("booleanKey", false);
+                AGConnectCrash.getInstance().setCustomKey("doubleKey", 1.1);
+                AGConnectCrash.getInstance().setCustomKey("floatKey", 1.1f);
+                AGConnectCrash.getInstance().setCustomKey("intKey", 0);
+                AGConnectCrash.getInstance().setCustomKey("longKey", 11L);
+
+            }
+        });
+
     }
 
 }

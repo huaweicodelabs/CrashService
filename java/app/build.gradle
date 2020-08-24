@@ -29,5 +29,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "com.huawei.agconnect:agconnect-crash:$rootProject.ext.agcVersion"
+    implementation "com.huawei.agconnect:agconnect-crash:1.4.0.300"
+    implementation 'com.huawei.hms:hianalytics:5.0.1.300'
 }
