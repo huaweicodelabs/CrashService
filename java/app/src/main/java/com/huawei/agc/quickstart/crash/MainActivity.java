@@ -40,17 +40,15 @@ public class MainActivity extends Activity {
             }
         });
 
-        findViewById(R.id.enable_crash_off).setOnClickListener(new View.OnClickListener() {
+        Button btn_exception = findViewById(R.id.btn_exception);
+        btn_exception.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                AGConnectCrash.getInstance().enableCrashCollection(false);
-            }
-        });
-
-        findViewById(R.id.enable_crash_on).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AGConnectCrash.getInstance().enableCrashCollection(true);
+            public void onClick(View view) {
+                try{
+                    throw new Exception();
+                }catch (Exception e){
+                    AGConnectCrash.getInstance().recordException(e);
+                }
             }
         });
 

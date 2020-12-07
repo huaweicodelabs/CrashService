@@ -19,18 +19,11 @@
             android:text="makeCrash" />
 
         <Button
-            android:id="@+id/enable_crash_off"
+            android:id="@+id/btn_exception"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
-            android:text="CrashCollectionOFF" />
-
-        <Button
-            android:id="@+id/enable_crash_on"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="CrashCollectionON" />
+            android:text="makeException" />
 
         <Button
             android:id="@+id/CustomReport"
