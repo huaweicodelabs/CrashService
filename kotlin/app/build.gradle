@@ -49,7 +49,7 @@ dependencies {
 
     // Configure the following addresses:
     implementation 'com.huawei.hms:hianalytics:2.3.0.304'
-    implementation 'com.huawei.agconnect:agconnect-crash:1.3.1.300'
+    implementation 'com.huawei.agconnect:agconnect-crash:1.7.3.300'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
