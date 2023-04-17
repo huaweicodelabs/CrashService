@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.huawei.harmonyos.crash",
+    "bundleName": "com.huawei.agc.harmonycrash",
     "vendor": "huawei",
     "version": {
       "code": 1000000,
@@ -9,17 +9,21 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.huawei.harmonyos.crash",
+    "package": "com.huawei.agc.harmonycrash",
     "name": ".MyApplication",
-    "mainAbility": "com.huawei.harmonyos.crash.MainAbility",
+    "mainAbility": "com.huawei.agc.harmonycrash.MainAbility",
     "deviceType": [
-      "phone"
+      "phone",
+      "tablet",
+      "tv",
+      "wearable",
+      "car"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
       "moduleType": "entry",
-      "installationFree": false
+      "installationFree": true
     },
     "abilities": [
       {
@@ -34,7 +38,8 @@
           }
         ],
         "orientation": "unspecified",
-        "name": "com.huawei.harmonyos.crash.MainAbility",
+        "visible": true,
+        "name": "com.huawei.agc.harmonycrash.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "label": "$string:entry_MainAbility",
@@ -47,7 +52,13 @@
         ],
         "name": "com.huawei.agconnect.core.provider.AGConnectInitializeAbility",
         "type": "data",
-        "uri": "dataability://com.huawei.harmonyos.crash.AGConnectInitializeAbility"
+        "uri": "dataability://com.huawei.agc.harmonycrash.AGConnectInitializeAbility"
+      },
+
+      {
+        "name": "com.huawei.apm.crash.APMCrashInitializeProvider",
+        "type": "data",
+        "uri": "dataability://com.huawei.agc.harmonycrash.APMCrashInitializeProvider"
       }
     ]
   }

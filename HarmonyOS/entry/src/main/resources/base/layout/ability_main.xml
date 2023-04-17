@@ -10,19 +10,22 @@
         ohos:id="$+id:Make_Crash"
         ohos:width="match_content"
         ohos:height="match_content"
-        ohos:top_margin="20vp"
+        ohos:top_margin="500px"
+        ohos:layout_alignment="horizontal_center"
         ohos:background_element="$graphic:background_ability_main"
-        ohos:left_margin="15vp"
+        ohos:left_margin="45px"
         ohos:text_size="20vp"
-        ohos:text="make crash"/>
+        ohos:text="make crash"
+        ohos:top_padding="0px"/>
 
     <Button
         ohos:id="$+id:Make_Exception"
         ohos:width="match_content"
         ohos:height="match_content"
-        ohos:top_margin="20vp"
+        ohos:top_margin="150px"
+        ohos:layout_alignment="horizontal_center"
         ohos:background_element="$graphic:background_ability_main"
-        ohos:left_margin="15vp"
+        ohos:left_margin="45px"
         ohos:text_size="20vp"
         ohos:text="make exception"/>
 
@@ -30,9 +33,10 @@
         ohos:id="$+id:Custom_Report"
         ohos:width="match_content"
         ohos:height="match_content"
-        ohos:top_margin="20vp"
+        ohos:top_margin="150px"
+        ohos:layout_alignment="horizontal_center"
         ohos:background_element="$graphic:background_ability_main"
-        ohos:left_margin="15vp"
+        ohos:left_margin="45px"
         ohos:text_size="20vp"
         ohos:text="CustomReport"/>
 

@@ -2,11 +2,11 @@
   "string": [
     {
       "name": "entry_MainAbility",
-      "value": "crash"
+      "value": "Crash Demo"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Empty Ability"
+      "value": "Crash Demo"
     },
     {
       "name": "mainability_HelloWorld",
